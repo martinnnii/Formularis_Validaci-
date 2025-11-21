@@ -1,0 +1,177 @@
+/* ---------- ESTILS GENERALS ---------- */
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f1f5ff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #e0ebff;
+    border-bottom: 3px solid #5b8df7;
+    padding: 1.5em 0;
+}
+
+h1 {
+    color: #1a3da3;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* ---------- FORMULARI PRINCIPAL ---------- */
+form {
+    background-color: #ffffff;
+    border: 2px solid #5b8df7;
+    border-radius: 1em;
+    width: 80%;
+    max-width: 650px;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* ---------- CAMPS I ETIQUETES ---------- */
+fieldset {
+    border: 1px solid #c8d6ff;
+    border-radius: 0.8em;
+    padding: 1em 1.5em;
+    background-color: #f8faff;
+}
+
+legend {
+    color: #1a3da3;
+    font-weight: bold;
+    padding: 0 0.5em;
+}
+
+label {
+    display: block;
+    margin-top: 0.6em;
+    color: #333;
+    font-size: 0.95em;
+}
+
+/* ---------- INPUTS I TEXTAREAS ---------- */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+input[type="color"],
+select,
+textarea {
+    width: 100%;
+    margin-top: 0.3em;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+    transition: all 0.3s ease;
+}
+
+/* Efectes d'interacció */
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #5b8df7;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: none;
+    border-color: #1a3da3;
+    box-shadow: 0 0 4px rgba(90, 141, 247, 0.5);
+}
+
+/* ---------- VALIDACIÓ VISUAL ---------- */
+input:valid {
+    border-color: #3cb371;
+}
+
+input:invalid {
+    border-color: #ff6b6b;
+}
+
+/* ---------- RADIO I CHECKBOX ---------- */
+fieldset p {
+    margin-top: 1em;
+    font-weight: bold;
+    color: #1a3da3;
+}
+
+/* Alineació millorada */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    background-color: #eef3ff;
+    padding: 0.3em 0.8em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.radio-group label:hover,
+.checkbox-group label:hover {
+    background-color: #dce7ff;
+    border: 1px solid #5b8df7;
+}
+
+/* ---------- BOTÓ ---------- */
+button,
+input[type="submit"] {
+    background-color: #1a3da3;
+    color: white;
+    padding: 0.7em 1.5em;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 0.6em;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #2d5ce0;
+    transform: scale(1.03);
+}
+
+/* ---------- ESTILS RESPONSIVE ----------
+
+Adapten el formulari a pantalles petites (mòbils i tauletes). */
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 1.2em;
+    }
+
+    legend {
+        font-size: 1em;
+    }
+
+    button,
+    input[type="submit"] {
+        width: 100%;
+    }
+}
