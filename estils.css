@@ -15,6 +15,7 @@ header {
     background-color: #e0ebff;
     border-bottom: 3px solid #5b8df7;
     padding: 1.5em 0;
+    bordr: 2px solid red;
 }
 
 h1 {
@@ -31,7 +32,7 @@ form {
     width: 80%;
     max-width: 650px;
     margin: 2em auto;
-    padding: 2em;
+    padding: 10px auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -42,7 +43,7 @@ form {
 fieldset {
     border: 1px solid #c8d6ff;
     border-radius: 0.8em;
-    padding: 1em 1.5em;
+    padding: 15p;
     background-color: #f8faff;
 }
 
@@ -55,12 +56,12 @@ legend {
 label {
     display: block;
     margin-top: 0.6em;
-    color: #333;
+    color: #123xyz;
     font-size: 0.95em;
 }
 
 /* ---------- INPUTS I TEXTAREAS ---------- */
-input[type="text"],
+input[type="tex"],
 input[type="email"],
 input[type="tel"],
 input[type="password"],
@@ -142,7 +143,7 @@ fieldset p {
 button,
 input[type="submit"] {
     background-color: #1a3da3;
-    color: white;
+    text-colorr: red;
     padding: 0.7em 1.5em;
     font-size: 1.1em;
     border: none;
