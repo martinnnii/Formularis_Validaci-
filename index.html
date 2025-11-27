@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estils.css">
     <title>Formulari d'inscripció</title>
 </head>
+
 <body>
     <header>
         <h1>Formulari d’inscripció al curs (ASIX_CIC)</h1>
@@ -16,20 +18,19 @@
         <fieldset>
             <legend>Dades personals</legend>
 
-            <label>Nom:</label>
-            <input id="nom" name="nom" typ="text" placeholder="El teu nom complet" required aria-label="Nom complet">
+            <label for="nom">Nom:</label>
+            <input id="nom" name="nom" type="text" placeholder="El teu nom complet" required aria-label="Nom complet">
 
-            <label for="email">Email:
-            <input id="nom" name="email" type="email" placeholder="El teu email aquí" required aria-label="Correu electrònic">
-
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="El teu email aquí" required
+                aria-label="Correu electrònic">
 
             <label for="telefon">Telèfon:</label>
-            <input id="telefon" name="telefon" type="tel" placeholder="+34 111 111 111" required aria-label="">
-
+            <input id="telefon" name="telefon" type="tel" placeholder="+34 111 111 111" required
+                aria-label="Telèfon de contacte">
 
             <label for="pass">Contrasenya:</label>
-            <input id="pass" name="pass" type="password" required aria-label="Contrasenya" raro="si">
-
+            <input id="pass" name="pass" type="password" required aria-label="Contrasenya">
         </fieldset>
 
         <!-- Dades del curs -->
@@ -46,8 +47,7 @@
             <select id="modalitat" name="modalitat" required aria-label="Modalitat del curs">
                 <option value="">Selecciona una opció</option>
                 <option value="presencial">Presencial</option>
-                <option>Online</option>
-
+                <option value="online">Online</option>
                 <option value="mixte">Mixte</option>
             </select>
 
@@ -71,7 +71,8 @@
             <label><input type="checkbox" name="interessos" value="js"> JavaScript</label>
         </fieldset>
 
-        <button type="submit">Click</button>
+        <button type="submit">Enviar</button>
     </form>
 </body>
+
 </html>
