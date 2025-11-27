@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>Formulari d’inscripció al curs (ASIX_CIC)</h1>
-        <!-- error
+        <!-- Logo afegit però sense alt (error d'accessibilitat intencionat) -->
         <img src="logo.png">
     </header>
 
@@ -18,18 +18,18 @@
         <fieldset>
             <legend>Dades personals</legend>
 
-            <!-- id duplicat -->
+            <!-- Atribut mal escrit: typ en lloc de type (error intencionat) -->
             <label for="nom">Nom:</label>
-            <input id="nom" name="nom" typo="text" placeholder="El teu nom complet" required aria-label="Nom complet">
+            <input id="nom" name="nom" typ="text" placeholder="El teu nom complet" required aria-label="Nom complet">
 
             <label for="email">Email:</label>
-            <input id="email" name="email" type="email" placeholder="El teu email aquí" required aria-label="Correu electrònic">
+            <input id="email" name="email" type="email" placeholder="El teu email aquí" required aria-label="Correu electrònic" aria-describedby="emailHelp">
 
             <label for="telefon">Telèfon:</label>
             <input id="telefon" name="telefon" type="tel" placeholder="+34 111 111 111" required aria-label="Telèfon de contacte">
 
-            <!-- label sense for -->
-            <label ="pass">Contrasenya:</label>
+            <!-- Label sense for (error intencionat) -->
+            <label>Contrasenya:</label>
             <input id="pass" name="pass" type="password" required aria-label="Contrasenya">
         </fieldset>
 
@@ -60,16 +60,20 @@
         <fieldset>
             <legend>Preferències</legend>
 
-            <p>Preferència de torn:
+            <p>Preferència de torn:</p>
 
-            <label><input type="radio" name="torn" value="mati" required> Matí</label>
-            <label><input type="radio" name="torn" value="tarda"> Tarda</label>
-            <label><input type="radio" name="torn" value="nit"> Nit</label>
+            <div class="radio-group">
+                <label><input type="radio" name="torn" value="mati" required> Matí</label>
+                <label><input type="radio" name="torn" value="tarda"> Tarda</label>
+                <label><input type="radio" name="torn" value="nit"> Nit</label>
+            </div>
 
             <p>Interessos:</p>
-            <label><input type="checkbox" name="interessos" value="html"> HTML</label>
-            <label><input type="checkbox" name="interessos" value="css"> CSS</label>
-            <label><input type="checkbox" name="interessos" value="js"> JavaScript</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interessos" value="html"> HTML</label>
+                <label><input type="checkbox" name="interessos" value="css"> CSS</label>
+                <label><input type="checkbox" name="interessos" value="js"> JavaScript</label>
+            </div>
         </fieldset>
 
         <button type="submit">Enviar</button>
